@@ -10,8 +10,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-      - name: Custom Actions - Cache dependencies
-        uses: ./.github/actions/cached-deps/
+      - name: Custom Actions and Cache dependencies
+        uses: ./.github/actions/cached-deps
       - name: Lint code
         run: npm run lint
 
